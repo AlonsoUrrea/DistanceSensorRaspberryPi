@@ -1,9 +1,10 @@
 import sqlalchemy
 from sqlalchemy.orm import declarative_base
+from .settings import CONN_STRING
 
 from gpiozero import DistanceSensor # sensor data
 
-engine = sqlalchemy.create_engine("mariadb+mariadbconnector://user:pass@host:port/database")
+engine = sqlalchemy.create_engine(CONN_STRING)
 Base = declarative_base()
 
 class Cliente(Base):
