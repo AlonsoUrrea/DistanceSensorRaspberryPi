@@ -1,6 +1,6 @@
 import sqlalchemy
 from sqlalchemy.orm import declarative_base
-from .settings import CONN_STRING
+from settings import CONN_STRING
 
 from gpiozero import DistanceSensor # sensor data
 

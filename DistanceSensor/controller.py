@@ -1,4 +1,4 @@
-from .models import *
+from models import *
 from sqlalchemy.orm import sessionmaker, session
 
 import uuid
